@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;900&family=Roboto:ital,wght@0,100;0,300;0,500;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+h1 {
+	margin: 1em 0;
+	font-size: 1.9em;
+	color: #222;
+}
+
+p {
+	font-weight: 300;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: left;
+    width: 100%;
+		border: 1px solid #333;
+}
+
+.card img {
+    height: 250px;
+		border-radius: 1em 1em 0 0;
+}
+
+.card-info {
+	padding: 1em;
+	text-align: center;
+}
+
+.card-title {
+  font-size: 1.2em;
+	font-weight: 300;
+  letter-spacing: 1px;
+	margin: 1em;
+}
+
+.card-btn {
+	background-color: white;
+  border: 2px solid #333;
+	padding: 1em;
+	width: 200px;
+	cursor: pointer;
+	font-size: 0.9em;
+	font-weight: 300;
+}
+
+dialog {
+  width: 50%;
+  height: 500px;
+  margin: 10% auto;
+  border: none;
+}
+
+dialog::backdrop {
+  background-color: #d8ddd793;
+  backdrop-filter: blur(6px);
+}
+
+.dialog-card p {
+	margin: 1em;
+}
+
+.dialog-btn {
+	margin-bottom: 1em;
+	border: none; 
+	background-color: white;
+	cursor: pointer;
+	border-bottom: 1px solid #333;
+}
+
+.dialog-btn:hover {
+	border-bottom: 1px solid #d8ddd7;
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 20%;
+  }
+
+	dialog {
+		width: 30%;
+	}
+}
